@@ -12,6 +12,7 @@
     "@clerk/clerk-js": "^5.65.0",
     "@clerk/nextjs": "^6.19.1",
     "@prisma/client": "^6.7.0",
+    "cloudinary": "^2.6.1",
     "daisyui": "^5.0.35",
     "next": "15.3.2",
     "react": "^19.0.0",
