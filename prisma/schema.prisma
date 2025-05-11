@@ -6,10 +6,22 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
+  // output   = "../app/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model Video{
+  id String @id @default(cuid())
+  title String
+  description String?
+  publicId String
+  originalSize String
+  compressedSize String
+  duration String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
